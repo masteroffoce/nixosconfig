@@ -1,7 +1,16 @@
 { config, pkgs, ... }: {
-  home.username = "myusername";
-  home.homeDirectory = "/home/myusername";
+  home.username = "calcium";
+  home.homeDirectory = "/home/calcium";
+
+  home.stateVersion = "24.05";
+
   programs.home-manager.enable = true;
-  home.packages = with pkgs; [ neofetch ];
+
+  home.packages = with pkgs; [
+    neofetch 
+    git
+    vim
+    cmatrix
+  ];
 }
 
