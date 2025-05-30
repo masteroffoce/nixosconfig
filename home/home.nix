@@ -7,10 +7,13 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
+    kitty
     neofetch 
     git
     vim
     cmatrix
+    firefox
+    waybar
   ];
 }
 
