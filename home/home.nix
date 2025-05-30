@@ -6,6 +6,8 @@
 
   programs.home-manager.enable = true;
 
+  xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
+
   home.packages = with pkgs; [
     kitty
     neofetch 
