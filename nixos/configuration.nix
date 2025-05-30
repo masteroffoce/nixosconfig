@@ -68,7 +68,7 @@
       keyboards = {
         myKMonadOutput = {
           device = "usb-Keychron_Keychron_Link-if02-event-kbd";
-          config = builtins.readFile /home/calcium/.config/kmonad/test.kbd;
+          config = builtins.readFile "${config.home.directory}/.config/kmonad/test.kbd";
         };
       };
     };
