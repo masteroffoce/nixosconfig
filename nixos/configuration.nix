@@ -63,22 +63,12 @@
   # Enable Hyprland
   programs.hyprland.enable = true;
 
-  services.kmonad = {
-    enable = true;
-      keyboards = {
-        myKMonadOutput = {
-          device = "usb-Keychron_Keychron_Link-if02-event-kbd";
-          config = builtins.readFile "${config.xdg.configHome}/kmonad/test.kbd";
-        };
-      };
-    };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   gcc
-  kmonad
   #  wget
   ];
 
