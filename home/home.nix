@@ -8,6 +8,7 @@
 
   xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
 
+  home.file.".bashrc".source = /.bashrc;
 
   home.packages = with pkgs; [
     kitty
