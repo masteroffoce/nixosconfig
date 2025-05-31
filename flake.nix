@@ -7,7 +7,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     
     kmonad = {
-      url = "github:kmonad/kmonad";
+      url = "github:kmonad/kmonad?dir=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
