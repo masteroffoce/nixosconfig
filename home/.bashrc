@@ -1,1 +1,1 @@
-alias kinit="kmonad ~/flake/home/kmonad/config.kbd"
+alias kint="kmonad ~/flake/home/kmonad/config.kbd"
