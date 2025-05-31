@@ -52,7 +52,7 @@
   users.users.calcium = {
     isNormalUser = true;
     description = "Calcium";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "uinput"];
     packages = with pkgs; [];
   };
 
@@ -72,9 +72,6 @@
       };
     };
   };
-
-  users.users.calcium.extraGroups = [ "input" "uinput" ];
-
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
