@@ -14,7 +14,7 @@
     keyboards = {
       myKmonadOutput = {
         device = "usb-Keychron_Keychron_Link-if02-event-kbd";
-        config = builtins.readFile ~/.config/kmonad/test.kbd
+        config = builtins.readFile "${config.home.homeDirectory}/.config/kmonad/test.kbd
       };
     };
   };
