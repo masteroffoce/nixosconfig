@@ -63,6 +63,18 @@
   # Enable Hyprland
   programs.hyprland.enable = true;
 
+  services.kmonad = {
+    enable = true;
+    keyboards = {
+      myKmonadOutput = {
+        device = "/dev/input/by-id/usb-Keychron_Keychron_Link-if02-event-kbd";
+        config = builtins.readFile ./kmonad/config.kbd;
+      };
+    };
+  };
+
+  users.users.calcium.extraGroups = [ "input" "uinput" ];
+
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

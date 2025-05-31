@@ -5,6 +5,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    
+    kmonad = {
+      url = "github:kmonad/kmonad";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }: {
@@ -18,6 +23,7 @@
           {
             home-manager.users.calcium = import ./home/home.nix;
           }
+          kmonad.nixosModules.default
         ];
       };
     };
