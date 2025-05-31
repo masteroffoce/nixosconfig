@@ -22,6 +22,7 @@
           home-manager.nixosModules.home-manager
           {
             home-manager.users.calcium = import ./home/home.nix;
+            home-manager.backupFileExtension = "backup";
           }
           kmonad.nixosModules.default
         ];
