@@ -20,5 +20,6 @@
     firefox
     waybar
     openssh
+    flatpak
   ];
 }
