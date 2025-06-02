@@ -18,5 +18,6 @@
     cmatrix
     firefox
     waybar
+    openssh
   ];
 }
