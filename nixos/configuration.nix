@@ -64,7 +64,7 @@
   programs.hyprland.enable = true;
 
   services.kmonad = {
-    enable = false;
+    enable = true;
     keyboards = {
       myKmonadOutput = {
         device = "/dev/input/by-id/usb-Keychron_Keychron_Link-if02-event-kbd";

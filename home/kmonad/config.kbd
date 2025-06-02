@@ -15,8 +15,14 @@
 )
 
 (defalias
-  a (tap-next-release a lmet)
-  j (tap-next-release j rmet)
+  a (tap-next-release a lalt)
+  r (tap-next-release r rctl)
+  s (tap-next-release s lsft)
+  t (tap-next-release t lmet)
+  n (tap-next-release n rmet)
+  e (tap-next-release e rsft)
+  i (tap-next-release i rctl)
+  o (tap-next-release o ralt)
   layq (layer-switch qwerty)
   layc (layer-switch base)
 )
@@ -25,7 +31,7 @@
   esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  @layq  del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
   tab  q   w   f   p   g   j   l   u   y   ;    [    ]    ret    pgdn
-  caps a   r   s   t   d   h   n   e   i   o    '    \           home
+  caps @a  @r  @s  @t  d   h   @n  @e  @i  @o   '    \           home
   lsft lsgt z  x   c   v   b   k   m   ,   .    /    rsft up     end
   lctl lmet lalt            spc       ralt rmet rctl left down   @layq
 )
@@ -35,7 +41,7 @@
   caps f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  @layc  del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
   tab  q   w   e   r   t   y   u   i   o   p    [    ]    ret    pgdn
-  esc  @a  s   d   f   g   h   @j  k   l   ;    '    \           home
+  esc  @a  s   d   f   g   h   j   k   l   ;    '    \           home
   lsft lsgt z  x   c   v   b   n   m   ,   .    /    rsft up     end
   lctl lmet lalt            spc       ralt rmet rctl left down   @layc
 )
