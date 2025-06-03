@@ -7,8 +7,7 @@
   programs.home-manager.enable = true;
 
   xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
-  xdg.configFile."hypr/shaders/test1".source = ./hypr/shaders/test1.glsl
-  xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl
+  xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
 
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash_profile".source = ./.bash_profile;
