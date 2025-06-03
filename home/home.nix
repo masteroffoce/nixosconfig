@@ -21,5 +21,6 @@
     waybar
     openssh
     flatpak
+    ddcutil
   ];
 }
