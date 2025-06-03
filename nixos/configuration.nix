@@ -52,7 +52,7 @@
   users.users.calcium = {
     isNormalUser = true;
     description = "Calcium";
-    extraGroups = [ "networkmanager" "wheel" "input" "uinput"];
+    extraGroups = [ "networkmanager" "wheel" "input" "uinput" "i2c" ];
     packages = with pkgs; [];
   };
 
@@ -73,6 +73,7 @@
     };
   };
 
+  services.udev.packages = [ pkgs.ddcutil ];
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
