@@ -22,5 +22,6 @@
     waybar
     openssh
     flatpak
+    erlang
   ];
 }
