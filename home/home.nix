@@ -23,7 +23,7 @@
     openssh
     flatpak
     erlang
-    python313
-    python313Packages.requests
+    python3
+    python3Packages.requests
   ];
 }
