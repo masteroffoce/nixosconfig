@@ -23,7 +23,7 @@
     openssh
     flatpak
     erlang
-    python
-    pip
+    python3
+    pythoon3Packages.pip
   ];
 }
