@@ -23,5 +23,7 @@
     openssh
     flatpak
     erlang
+    python
+    pip
   ];
 }
