@@ -49,6 +49,11 @@
     variant = "";
   };
 
+  services.ollama = {
+    enable = true;
+    loadModels = [ "llama3.2:3b" ];
+  };
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.calcium = {
     isNormalUser = true;
