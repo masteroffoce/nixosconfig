@@ -24,6 +24,6 @@
     flatpak
     erlang
     python3
-    python3Packages.requests
+    python313Packages.requests
   ];
 }
