@@ -24,6 +24,6 @@
     flatpak
     erlang
     python3
-    pythoon3Packages.pip
+    python3Packages.pip
   ];
 }
