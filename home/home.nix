@@ -24,5 +24,6 @@
     flatpak
     erlang
     python3
+    unzip
   ];
 }
