@@ -8,7 +8,7 @@
 
   xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
   xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
-  xdg.configGile."hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
+  xdg.configFile."hypr/hyprpaper.conf".source = ./hypr/hyprpaper.conf;
 
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash_profile".source = ./.bash_profile;
