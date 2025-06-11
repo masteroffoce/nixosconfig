@@ -27,5 +27,6 @@
     unzip
     hyprpaper
     neovim
+    file
   ];
 }
