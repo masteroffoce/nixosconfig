@@ -29,5 +29,6 @@
     hyprpaper
     neovim
     file
+    ripgrep
   ];
 }
