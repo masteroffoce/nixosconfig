@@ -4,13 +4,9 @@ return {
     build = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "lua", "python", "c" },
+        ensure_installed = { "lua", "python", "c", "erlang" },
         highlight = { enable = true },
       })
     end,
   },
 }
-
-require'nvim-treesitter.configs'.setup {
-    ensure_installed = { "c" },
-{
