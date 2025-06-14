@@ -1,4 +1,3 @@
--- ~/.config/nvim/lua/config/plugins/treesitter.lua
 return {
   {
     "nvim-treesitter/nvim-treesitter",
@@ -12,3 +11,6 @@ return {
   },
 }
 
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = { "c" },
+{
