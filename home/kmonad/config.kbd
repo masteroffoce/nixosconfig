@@ -41,7 +41,7 @@
   @swt f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  prnt   del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
   tab  q   q   f   p   b   j   del ret tab bspc [    ]    ret    pgdn
-  caps bspc tab ret del g  m   left down  up right '    \           home
+  caps bspc tab ret del g  left down  up right  ;    '    \      home
   lsft z  x  c  d  v   \   k   h   ,   .    /    rsft up     end
   lctl lmet lalt            spc       ralt rmet rctl left down   right
 )
