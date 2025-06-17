@@ -30,5 +30,6 @@
     neovim
     file
     ripgrep
+    wget
   ];
 }
