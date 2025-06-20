@@ -31,7 +31,5 @@
     file
     ripgrep
     wget
-    gtk3
-    pkg-config
     ];
 }
