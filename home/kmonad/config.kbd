@@ -15,17 +15,16 @@
 )
 
 (defalias
-  a (tap-next-release a lalt)
-  r (tap-next-release r rctl)
-  s (tap-next-release s lsft)
-  t (tap-next-release t lmet)
-  l (tap-next-release l rmet)
-  u (tap-next-release u rsft)
-  y (tap-next-release y rctl)
-  ; (tap-next-release ; ralt)
+  a (tap-next-press a lalt)
+  r (tap-next-press r rctl)
+  s (tap-next-press s lsft)
+  t (tap-next-press t lmet)
+  l (tap-next-press l rmet)
+  u (tap-next-press u rsft)
+  y (tap-next-press y rctl)
+  ; (tap-next-press ; ralt)
   swt (layer-switch switch)
-  space (tap-next-release spc (layer-toggle spacemod))
-  ;;space (tap-next-release spc lsft)
+  space (tap-next-press spc (layer-toggle spacemod))
 )
 
 (deflayer base
