@@ -31,6 +31,6 @@
     file
     ripgrep
     wget
-    swaync
+    swaynotificationcenter
     ];
 }
