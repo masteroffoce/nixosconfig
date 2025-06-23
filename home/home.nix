@@ -31,7 +31,5 @@
     file
     ripgrep
     wget
-    mako
-    libnotify
     ];
 }
