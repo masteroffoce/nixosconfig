@@ -28,3 +28,6 @@ vim.keymap.set({"n", "v", "o"}, "v", "v")
 vim.keymap.set({"n", "v", "o"}, "\\", "b")
 vim.keymap.set({"n", "v", "o"}, "k", "n")
 vim.keymap.set({"n", "v", "o"}, "h", "m")
+
+vim.opt["tabstop"] = 4
+vim.opt["shiftwidth"] = 4
