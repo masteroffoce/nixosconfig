@@ -31,5 +31,6 @@
     file
     ripgrep
     wget
+	wofi
     ];
 }
