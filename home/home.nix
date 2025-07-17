@@ -33,5 +33,6 @@
     wget
 	wofi
 	zafiro-icons
+	nwg-icon-picker
     ];
 }
