@@ -32,5 +32,6 @@
     ripgrep
     wget
 	wofi
+	zafiro-icons
     ];
 }
