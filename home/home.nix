@@ -35,5 +35,6 @@
 	zafiro-icons
 	nwg-icon-picker
 	qutebrowser
+	librewolf
     ];
 }
