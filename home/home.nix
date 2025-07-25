@@ -34,5 +34,6 @@
 	wofi
 	zafiro-icons
 	nwg-icon-picker
+	qutebrowser
     ];
 }
