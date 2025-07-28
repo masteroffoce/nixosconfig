@@ -37,4 +37,8 @@
 	qutebrowser
 	librewolf
     ];
+
+  programs.steam = {
+    enable = true;
+  }
 }
