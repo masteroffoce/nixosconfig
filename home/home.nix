@@ -36,7 +36,7 @@
 	nwg-icon-picker
 	qutebrowser
 	librewolf
+	steam
     ];
 
-  programs.steam.enable = true;
 }
