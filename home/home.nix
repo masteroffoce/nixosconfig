@@ -40,5 +40,5 @@
 
   programs.steam = {
     enable = true;
-  }
+  };
 }
