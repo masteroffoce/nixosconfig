@@ -13,6 +13,8 @@
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash_profile".source = ./.bash_profile;
 
+  nixpkgs.config.allowUnfree = true;
+
   home.packages = with pkgs; [
     kitty
     neofetch 
