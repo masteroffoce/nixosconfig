@@ -38,5 +38,6 @@
 	nwg-icon-picker
 	qutebrowser
 	librewolf
+	superTuxKart
     ];
 }
