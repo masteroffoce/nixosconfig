@@ -39,5 +39,6 @@
 	qutebrowser
 	librewolf
 	superTuxKart
+	unciv
     ];
 }
