@@ -15,23 +15,23 @@
 )
 
 (defalias
-  a (tap-next-press a lalt)
-  r (tap-next-press r rctl)
-  s (tap-next-press s lsft)
-  t (tap-next-press t lmet)
-  l (tap-next-press l rmet)
-  u (tap-next-press u rsft)
-  y (tap-next-press y rctl)
-  ; (tap-next-press ; ralt)
+  a (tap-hold-next 100 a lalt :timeout-button a)
+  r (tap-hold-next 100 r lctl :timeout-button r)
+  s (tap-hold-next 100 s lsft :timeout-button s)
+  t (tap-hold-next 100 t lmet :timeout-button t)
+  n (tap-hold-next 100 n rmet :timeout-button n)
+  e (tap-hold-next 100 e rsft :timeout-button e)
+  i (tap-hold-next 100 i rctl :timeout-button i)
+  o (tap-hold-next 100 o ralt :timeout-button o)
   swt (layer-switch switch)
-  space (tap-next-press spc (layer-toggle spacemod))
+  space (tap-hold-next 100 spc (layer-toggle spacemod) :timeout-button spc)
 )
 
 (deflayer base
   @swt f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  prnt   del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
-  tab  q   w   f   p   b   j   @l  @u  @y  @;   [    ]    ret    pgdn
-  esc  @a  @r  @s  @t  g   m   n   e   i   o    '    \           home
+  tab  q   w   f   p   b   j   l   u   y   ;    [    ]    ret    pgdn
+  esc  @a  @r  @s  @t  g   m   @n  @e  @i  @o   '    \           home
   lsft z  x  c  d  v   \   k   h   ,   .    /    rsft up     end
   lctl lmet lalt            @space    ralt rmet rctl left down   right
 )
@@ -48,13 +48,12 @@
 (defalias
   qw (layer-switch qwerty)
   cm (layer-switch base)
-  er (layer-switch erlang)
 )
 
 (deflayer switch
   esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  prnt   del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
-  tab  @qw w   @er p   g   j   l   u   y   ;    [    ]    ret    pgdn
+  tab  @qw w   f   p   g   j   l   u   y   ;    [    ]    ret    pgdn
   caps a   a   s   t   d   h   n   e   i   o    '    \           home
   lsft lsgt z  x   @cm v   b   k   m   ,   .    /    rsft up     end
   lctl lmet lalt            spc       ralt rmet rctl left down   right
@@ -66,18 +65,5 @@
   tab  q   w   e   r   t   y   u   i   o   p    [    ]    ret    pgdn
   esc  a   s   d   f   g   h   j   k   l   ;    '    \           home
   lsft lsgt z  x   c   v   b   n   m   ,   .    /    rsft up     end
-  lctl lmet lalt            spc       ralt rmet rctl left down   right
-)
-
-(defalias
-  -> (tap-macro - >)
-)
-
-(deflayer erlang
-  @swt f1  f2  f3  f4  f5  f6  f7  \   {   }    %    *    prnt   del
-  grv  1   2   3   4   5   6   7   8   9   0    -    +    bspc   pgup
-  tab  q   w   f   p   g   j   l   u   y   ;    [    ]    ret    pgdn
-  esc  a   r   s   t   d   h   n   e   i   o    \(   \)          home
-  lsft @-> z   x   c   v   b   k   m   ,   .    /    rsft up     end
   lctl lmet lalt            spc       ralt rmet rctl left down   right
 )
