@@ -32,7 +32,7 @@
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
   tab  q   w   f   p   b   j   l   u   y   ;    [    ]    ret    pgdn
   esc  @a  @r  @s  @t  g   m   @n  @e  @i  @o   '    \           home
-  lsft z  x  c  d  v   \   k   h   ,   .    /    rsft up     end
+  lsft z  x  c  d  v   \   k   @symI @symII @symIII @symIV rsft up     end
   lctl lmet lalt            @space    ralt rmet rctl left down   right
 )
 
@@ -66,4 +66,45 @@
   esc  a   s   d   f   g   h   j   k   l   ;    '    \           home
   lsft lsgt z  x   c   v   b   n   m   ,   .    /    rsft up     end
   lctl lmet lalt            spc       ralt rmet rctl left down   right
+)
+
+#| Code to get all symbols with 4 keys. |#
+
+(defsrc :name symbols
+m , . /
+)
+
+(defalias
+  symI #( (tap-hold-next 400 XX (layer-toggle symi)) (multi-tap 200 #(h XX) #(/ XX) ) )
+  symII #( (tap-hold-next 400 XX (layer-toggle symii)) (multi-tap 200 #(- XX) #({ XX) ) )
+  symIII #( (tap-hold-next 400 XX (layer-toggle symiii)) (multi-tap 200 #(\_ XX) #([ XX) ) )
+  symIV #( (tap-hold-next 400 XX (layer-toggle symiv)) (multi-tap 200 #(\ XX) #(" XX) ) )
+)
+
+(deflayer symi :source symbols
+_
+#( bspc (multi-tap 200 < >) )
+#( bspc (multi-tap 200 * &) )
+#( bspc (multi-tap 200 | `) )
+)
+
+(deflayer symii :source symbols
+#( bspc (multi-tap 200 . :) )
+_
+#( bspc (multi-tap 200 , ?) )
+#( bspc (multi-tap 200 ~ !) )
+)
+
+(deflayer symiii :source symbols
+#( bspc (multi-tap 200 $ }) )
+#( bspc (multi-tap 200 # ') )
+_
+#( bspc (multi-tap 200 @ \)) )
+)
+
+(deflayer symiv :source symbols
+#( bspc (multi-tap 200 + ^) )
+#( bspc (multi-tap 200 = ]) )
+#( bspc (multi-tap 200 % #(- >)) )
+_
 )
