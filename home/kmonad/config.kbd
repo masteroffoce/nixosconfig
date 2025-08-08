@@ -23,6 +23,7 @@
   e (tap-hold-next 200 e rsft :timeout-button e)
   i (tap-hold-next 200 i rctl :timeout-button i)
   o (tap-hold-next 200 o ralt :timeout-button o)
+  ; (multi-tap 200 ; \()
   swt (layer-switch switch)
   space (tap-hold-next 200 spc (layer-toggle spacemod) :timeout-button spc)
 )
@@ -30,7 +31,7 @@
 (deflayer base
   @swt f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  prnt   del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
-  tab  q   w   f   p   b   j   l   u   y   ;    [    ]    ret    pgdn
+  tab  q   w   f   p   b   j   l   u   y   @;    [    ]    ret    pgdn
   esc  @a  @r  @s  @t  g   m   @n  @e  @i  @o   '    \           home
   lsft z  x  c  d  v   \   k   @symI @symII @symIII @symIV rsft up     end
   lctl lmet lalt            @space    ralt rmet rctl left down   right
