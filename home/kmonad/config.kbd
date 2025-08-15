@@ -15,14 +15,14 @@
 )
 
 (defalias
-  a (tap-hold-next 200 a lalt :timeout-button a)
+  a (tap-hold-next 200 a lctl :timeout-button a)
   r (tap-hold-next 200 r (layer-toggle left) :timeout-button r)
   s (tap-hold-next 200 s lsft :timeout-button s)
   t (tap-hold-next 200 t lmet :timeout-button t)
   n (tap-hold-next 200 n rmet :timeout-button n)
-  e (tap-hold-next 200 e (layer-toggle right) :timeout-button e)
-  i (tap-hold-next 200 i rctl :timeout-button i)
-  o (tap-hold-next 200 o ralt :timeout-button o)
+  e (tap-hold-next 200 e rsft :timeout-button e)
+  i (tap-hold-next 200 i (layer-toggle right :timeout-button i)
+  o (tap-hold-next 200 o rctl :timeout-button o)
   swt (layer-switch switch)
   space (tap-hold-next 200 spc (layer-toggle spacemod) :timeout-button spc)
 )
