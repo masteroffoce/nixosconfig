@@ -68,8 +68,7 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  # Enable Hyprland
-  programs.hyprland.enable = true;
+  
 
   services.kmonad = {
     enable = true;

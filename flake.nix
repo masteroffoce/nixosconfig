@@ -1,10 +1,11 @@
 {
-  description = "My flake-based NixOS config";
+  description = "NixOS config";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    hyprland.url = "github:hyprwm/Hyprland";
     
     kmonad = {
       url = "github:kmonad/kmonad?dir=nix";

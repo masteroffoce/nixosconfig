@@ -6,6 +6,11 @@
 
   programs.home-manager.enable = true;
 
+  programs.hyprland.enable = true;
+  wayland.windowManager.hyprland = {
+    enable = true;
+  };
+
   xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
   xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
   xdg.configFile."nvim".source = ./nvim;
