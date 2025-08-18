@@ -38,15 +38,16 @@
     file
     ripgrep
     wget
-	wofi
-	zafiro-icons
-	nwg-icon-picker
-	qutebrowser
-	librewolf
-	superTuxKart
-	unciv
-	nerd-fonts.dejavu-sans-mono
-	dejavu_fonts
+    wofi
+    zafiro-icons
+    nwg-icon-picker
+    qutebrowser
+    librewolf
+    superTuxKart
+    unciv
+    nerd-fonts.dejavu-sans-mono
+    dejavu_fonts
+    wireplumber
     ];
      
 
