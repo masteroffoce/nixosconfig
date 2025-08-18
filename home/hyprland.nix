@@ -102,7 +102,7 @@
       };
       
       bind = [
-        "SUPER, Q, exec, $terminal";
+        "SUPER, Q, exec, $terminal"
         "SUPER, C, killactive"
         "SUPER, B, exit"
         "SUPER, V, togglefloating"
