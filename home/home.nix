@@ -44,5 +44,6 @@
 	librewolf
 	superTuxKart
 	unciv
+	ttf-jetbrains-mono
     ];
 }
