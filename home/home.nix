@@ -45,7 +45,7 @@
 	librewolf
 	superTuxKart
 	unciv
-	nerd-fonts.droid-sans-mono
+	nerd-fonts.dejavu-sans-mono
 	dejavu_fonts
     ];
      
