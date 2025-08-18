@@ -44,6 +44,7 @@
 	librewolf
 	superTuxKart
 	unciv
-	ttf-jetbrains-mono
+	dejavu-fonts
+	fontconfig
     ];
 }
