@@ -143,7 +143,7 @@
         "SUPER SHIFT, S, movetoworkspace, special::magic"
 
         "SUPER, mouse:272, movewindow"
-        "SUPER, mouse:273, resizewindow"
+        #"SUPER, mouse:273, resizewindow"
 
       ];
 
