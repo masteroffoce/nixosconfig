@@ -44,7 +44,14 @@
 	librewolf
 	superTuxKart
 	unciv
-	dejavu-fonts
-	fontconfig
     ];
+     
+
+  {
+  fonts.fontconfig.enable = true;
+  home.packages = [
+    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+  ];
+}
+
 }
