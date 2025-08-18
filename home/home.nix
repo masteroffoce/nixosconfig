@@ -1,4 +1,9 @@
 { config, pkgs, ... }: {
+
+  imports = [
+    (import ./hyprland.nix { inherit config pkgs; })
+  ];
+
   home.username = "calcium";
   home.homeDirectory = "/home/calcium";
 
@@ -7,9 +12,6 @@
   programs.home-manager.enable = true;
 
   fonts.fontconfig.enable = true;
-  wayland.windowManager.hyprland = {
-    enable = true;
-  };
 
   xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
   xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
