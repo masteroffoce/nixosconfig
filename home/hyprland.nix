@@ -4,9 +4,6 @@
     enable = true;
 
     settings = {
-      animations = {
-        enabled = "no";
-      };
 
       monitor = ",prefered,auto,1";
 
