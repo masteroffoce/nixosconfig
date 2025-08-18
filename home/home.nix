@@ -46,6 +46,7 @@
 	superTuxKart
 	unciv
 	nerd-fonts.droid-sans-mono
+	dejavu-fonts
     ];
      
 
