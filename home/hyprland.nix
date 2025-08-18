@@ -81,6 +81,23 @@
                         ];
       };
 
+      windowrule = "float, class:floating";
+
+      dwindle = {
+        pseudotile = true;
+        preserve_split = true;
+      };
+
+      mster = {
+        new_status = "master";
+      };
+
+      misc = {
+        force_default_wallpaper = 2;
+      };
+      
+
+
     };
 
   };
