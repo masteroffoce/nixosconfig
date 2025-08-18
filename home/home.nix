@@ -45,7 +45,7 @@
 	librewolf
 	superTuxKart
 	unciv
-	(pkgs.nerdfonts.override {fonts = ["DroidSansMono"];})
+	nerd-fonts.droid-sans-mono
     ];
      
 
