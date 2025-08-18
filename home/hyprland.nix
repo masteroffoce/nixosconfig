@@ -88,12 +88,17 @@
         preserve_split = true;
       };
 
-      mster = {
+      master = {
         new_status = "master";
       };
 
       misc = {
         force_default_wallpaper = 2;
+      };
+
+      input = {
+        repeat_delay = 200;
+        sensitivity = 0;
       };
       
 
