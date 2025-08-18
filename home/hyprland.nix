@@ -5,7 +5,7 @@
 
     settings = {
       animations = {
-        enabled = no;
+        enabled = "no";
       };
     };
 
