@@ -6,6 +6,7 @@
 
   programs.home-manager.enable = true;
 
+  fonts.fontconfig.enable = true;
   wayland.windowManager.hyprland = {
     enable = true;
   };
@@ -44,13 +45,10 @@
 	librewolf
 	superTuxKart
 	unciv
+	(pkgs.nerdfonts.override {fonts = ["DroidSansMono"];)
     ];
      
 
-  fonts.fontconfig.enable = true;
-  home.packages = [
-    (pkgs.nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
-  ];
 
 
 }
