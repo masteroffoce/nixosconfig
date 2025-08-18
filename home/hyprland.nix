@@ -7,6 +7,8 @@
       animations = {
         enabled = no;
       };
+    };
+
   };
 
-};
+}
