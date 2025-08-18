@@ -10,12 +10,12 @@
 
       monitor = ",prefered,auto,1";
 
-      "$terminal" = kitty
-      "$menu" = wofi --show drun
+      "$terminal" = kitty;
+      "$menu" = wofi --show drun;
 
-      "exec-once" = "cd ~/working_projects/daily_images; ./run.sh"
+      "exec-once" = "cd ~/working_projects/daily_images; ./run.sh";
 
-      env = "HYPRCURSOR_SIZE,24"
+      env = "HYPRCURSOR_SIZE,24";
     };
 
   };
