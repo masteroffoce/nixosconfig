@@ -12,7 +12,6 @@
 
   services.pipewire = {
     enable = true;
-    pulseaudio.enable = true;
     wireplumber.enable = true;
   };
 
