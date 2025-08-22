@@ -16,7 +16,7 @@
     alsa.support32Bit = false;
     pulse.enable = true;
     jack.enable = true;
-    services.wireplumber.enable = true;
+    wireplumber.enable = true;
   };
 
 
