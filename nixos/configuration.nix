@@ -12,8 +12,13 @@
 
   services.pipewire = {
     enable = true;
-    wireplumber.enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = false;
+    pulse.enable = true;
+    jack.enable = true;
   };
+
+  services.wireplumber.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
