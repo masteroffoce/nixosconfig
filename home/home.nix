@@ -50,6 +50,7 @@
     nerd-fonts.dejavu-sans-mono
     dejavu_fonts
     wireplumber
+    tmux
     ];
      
 
