@@ -19,7 +19,7 @@
 
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash_profile".source = ./.bash_profile;
-  xdg.configFile.".tmux_conf".source = ./.tmux.conf;
+  xdg.configFile.".tmux.conf".source = ./.tmux.conf;
 
   nixpkgs.config.allowUnfree = true;
 
