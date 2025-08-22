@@ -16,9 +16,9 @@
     alsa.support32Bit = false;
     pulse.enable = true;
     jack.enable = true;
+    services.wireplumber.enable = true;
   };
 
-  services.wireplumber.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
