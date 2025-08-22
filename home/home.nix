@@ -13,13 +13,12 @@
 
   fonts.fontconfig.enable = true;
 
-  #xdg.configFile."hypr/hyprland.conf".source = ./hypr/hyprland.conf;
   xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
   xdg.configFile."nvim".source = ./nvim;
+  xdg.configFile.".config/.tmux.conf".source = ./.config/.tmux.conf;
 
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash_profile".source = ./.bash_profile;
-  xdg.configFile.".tmux.conf".source = ./.tmux.conf;
 
   nixpkgs.config.allowUnfree = true;
 
