@@ -111,7 +111,7 @@
         "SUPER, J, togglesplit"
         "SUPER, G, exec, librewolf"
         "SUPER, F, fullscreen"
-        "SUPER, S, exec, pion"
+        "SUPER, T, exec, pion"
 
         "SUPER, N, movefocus, l"
         "SUPER, E, movefocus, d"
