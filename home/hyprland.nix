@@ -111,7 +111,7 @@
         "SUPER, J, togglesplit"
         "SUPER, G, exec, librewolf"
         "SUPER, F, fullscreen"
-        "SUPER, T, exec, pion"
+        "SUPER, T, exec, ~/active_projects/pion/run"
 
         "SUPER, N, movefocus, l"
         "SUPER, E, movefocus, d"
