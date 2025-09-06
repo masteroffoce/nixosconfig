@@ -10,7 +10,7 @@
       "$terminal" = "kitty";
       "$menu" = "wofi --show drun";
 
-      "exec-once" = "cd ~/working_projects/daily_images; ./run.sh";
+      #"exec-once" = "cd ~/working_projects/daily_images; ./run.sh";
 
       env = "HYPRCURSOR_SIZE,24";
 
