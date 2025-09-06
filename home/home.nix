@@ -51,7 +51,7 @@
     dejavu_fonts
     wireplumber
     tmux
-    ulmit
+    gdb
     ];
      
 
