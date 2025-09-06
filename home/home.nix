@@ -52,6 +52,7 @@
     wireplumber
     tmux
     gdb
+    qemu
     ];
      
 
