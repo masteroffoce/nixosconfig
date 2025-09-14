@@ -25,6 +25,7 @@
   o (tap-hold-next 200 o rctl :timeout-button o)
   swt (layer-switch switch)
   space (tap-hold-next 200 spc (layer-toggle spacemod) :timeout-button spc)
+  pion #((press-only rmet) P5 t P5 (release-only rmet))
 )
 
 (deflayer base
@@ -32,7 +33,7 @@
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
   tab  q   w   f   p   b   j   l   u   y   home    [    ]    ret    pgdn
   esc  @a  @r  @s  @t  g   m   @n  @e  @i  @o   '    \           home
-  lsft z  x  c  d  v   M-t k h   ,   .   /         rsft up     end
+  lsft z  x  c  d  v   @pion k h   ,   .   /         rsft up     end
   lctl lmet lalt            @space    ralt rmet rctl left down   right
 )
 
