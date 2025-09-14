@@ -25,7 +25,7 @@
   o (tap-hold-next 200 o rctl :timeout-button o)
   swt (layer-switch switch)
   space (tap-hold-next 200 spc (layer-toggle spacemod) :timeout-button spc)
-  pion #((around-next rmet) t)
+  pion #((around-next rmet) t :delay 5)
 )
 
 (deflayer base
