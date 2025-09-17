@@ -15,25 +15,51 @@
 )
 
 (defalias
-  a (tap-hold-next 200 a lctl :timeout-button a)
+  a #( (tap-hold-next 200 a lctl :timeout-button a) (around-next-timeout 300 (layer-toggle no-mods) XX))
   r (tap-hold-next 200 r (layer-toggle left) :timeout-button r)
-  s (tap-hold-next 200 s lsft :timeout-button s)
-  t (tap-hold-next 200 t lmet :timeout-button t)
-  n (tap-hold-next 200 n rmet :timeout-button n)
-  e (tap-hold-next 200 e rsft :timeout-button e)
+  s #( (tap-hold-next 200 s lsft :timeout-button s) (around-next-timeout 300 (layer-toggle no-mods) XX))
+  t #( (tap-hold-next 200 t lmet :timeout-button t) (around-next-timeout 300 (layer-toggle no-mods) XX))
+  n #( (tap-hold-next 200 n rmet :timeout-button n) (around-next-timeout 300 (layer-toggle no-mods) XX))
+  e #( (tap-hold-next 200 e rsft :timeout-button e) (around-next-timeout 300 (layer-toggle no-mods) XX))
   i (tap-hold-next 200 i (layer-toggle right) :timeout-button i)
-  o (tap-hold-next 200 o rctl :timeout-button o)
+  o #( (tap-hold-next 200 o rctl :timeout-button o) (around-next-timeout 300 (layer-toggle no-mods) XX))
   swt (layer-switch switch)
   space (tap-hold-next 200 spc (layer-toggle spacemod) :timeout-button spc)
   pion #((press-only rmet) P5 t P5 (release-only rmet))
 )
 
+(defalias
+  q #(q (around-next-timeout 300 (layer-toggle no-mods) XX))
+  w #(w (around-next-timeout 300 (layer-toggle no-mods) XX))
+  f #(f (around-next-timeout 300 (layer-toggle no-mods) XX))
+  p #(p (around-next-timeout 300 (layer-toggle no-mods) XX))
+  b #(b (around-next-timeout 300 (layer-toggle no-mods) XX))
+  j #(j (around-next-timeout 300 (layer-toggle no-mods) XX))
+  l #(l (around-next-timeout 300 (layer-toggle no-mods) XX))
+  u #(u (around-next-timeout 300 (layer-toggle no-mods) XX))
+  y #(y (around-next-timeout 300 (layer-toggle no-mods) XX))
+
+  g #(g (around-next-timeout 300 (layer-toggle no-mods) XX))
+  m #(m (around-next-timeout 300 (layer-toggle no-mods) XX))
+
+  z #(z (around-next-timeout 300 (layer-toggle no-mods) XX))
+  x #(x (around-next-timeout 300 (layer-toggle no-mods) XX))
+  c #(c (around-next-timeout 300 (layer-toggle no-mods) XX))
+  d #(d (around-next-timeout 300 (layer-toggle no-mods) XX))
+  v #(v (around-next-timeout 300 (layer-toggle no-mods) XX))
+  k #(k (around-next-timeout 300 (layer-toggle no-mods) XX))
+  h #(h (around-next-timeout 300 (layer-toggle no-mods) XX))
+  , #(, (around-next-timeout 300 (layer-toggle no-mods) XX))
+  . #(. (around-next-timeout 300 (layer-toggle no-mods) XX))
+  / #(/ (around-next-timeout 300 (layer-toggle no-mods) XX))
+)
+
 (deflayer base
   @swt f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  prnt   del
   grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
-  tab  q   w   f   p   b   j   l   u   y   home    [    ]    ret    pgdn
-  esc  @a  @r  @s  @t  g   m   @n  @e  @i  @o   '    \           home
-  lsft z  x  c  d  v   @pion k h   ,   .   /         rsft up     end
+  tab  @q  @w  @f  @p  @b  @j  @l  @u  @y  home   [    ]    ret    pgdn
+  esc  @a  @r  @s  @t  @g  @m  @n  @e  @i  @o   '    \           home
+  lsft @z  @x  @c  @d  @v @pion @k @h  @,  @.   @/         rsft up     end
   lctl lmet lalt            @space    ralt rmet rctl left down   right
 )
 
@@ -87,3 +113,12 @@
   _ _ _            _    _ _ _ _ _   _
 )
 
+
+(deflayer no-mods
+  esc f1  f2  f3  f4  f5  f6  f7  f8  f9  f10  f11  f12  prnt   del
+  grv  1   2   3   4   5   6   7   8   9   0    -    =    bspc   pgup
+  tab  @q  @w  @f  @p  @b  @j  @l  @u  @y  home    [    ]    ret    pgdn
+  esc  @a  @r  @s  @t  @g  @m  @n  @e  @i  @o   '    \           home
+  lsft @z  @x  @c  @d  @v  \  @k  @h  @,  @.   @/         rsft up     end
+  lctl lmet lalt            space    ralt rmet rctl left down   right
+)
