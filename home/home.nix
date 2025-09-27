@@ -53,9 +53,7 @@
     tmux
     gdb
     qemu
+    tinty
     ];
-     
-
-
 
 }
