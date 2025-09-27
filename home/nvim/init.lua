@@ -34,3 +34,4 @@ vim.opt["shiftwidth"] = 4
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.cindent = false
+vim.opt.termguicolors = true
