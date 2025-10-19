@@ -16,7 +16,7 @@
   xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
   xdg.configFile."nvim".source = ./nvim;
   #xdg.configFile.".config/.tmux.conf".source = ./.config/.tmux.conf;
-  xdg.configFile.".config/kitty/kitty.conf".source = ./.config/kitty/kitty.conf
+  xdg.configFile.".config/kitty/kitty.conf".source = ./.config/kitty/kitty.conf;
 
   home.file.".bashrc".source = ./.bashrc;
   home.file.".bash_profile".source = ./.bash_profile;
