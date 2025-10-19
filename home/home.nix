@@ -54,6 +54,8 @@
     gdb
     qemu
     tinty
+    bemenu
+    mustache-go
     ];
 
 }
