@@ -7,7 +7,7 @@
 
       monitor = ",prefered,auto,1";
 
-      "$terminal" = "kitty";
+      "$terminal" = "kitty --single-instance -o listen_on=unix:@kitty";
       "$menu" = "wofi --show drun";
 
       #"exec-once" = "cd ~/working_projects/daily_images; ./run.sh";
