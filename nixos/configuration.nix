@@ -68,6 +68,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.calcium = {
     isNormalUser = true;
+    hashedPassword = "$6$XbpaobcPjqA9SlHY$EYkSXxxkpXAwtZqpY5gtXsAKxIUXzaRzTRF3WVaazI7q1fdtSpg.hAI6IjEWlQWt6vVJm8SleHoc7s8SpL2yk0";
     description = "Calcium";
     extraGroups = [ "networkmanager" "wheel" "input" "uinput" "kvm" ];
     packages = with pkgs; [];
