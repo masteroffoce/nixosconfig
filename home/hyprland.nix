@@ -118,6 +118,12 @@
         "SUPER, I, movefocus, u"
         "SUPER, O, movefocus, r"
 
+        "SUPER SHIFT, N, movewindow, l"
+        "SUPER SHIFT, E, movewindow, d"
+        "SUPER SHIFT, I, movewindow, u"
+        "SUPER SHIFT, O, movewindow, r"
+
+
         "SUPER, 1, workspace, 1"
         "SUPER, 2, workspace, 2"
         "SUPER, 3, workspace, 3"
