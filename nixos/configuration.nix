@@ -67,7 +67,6 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.calcium = {
-    shell = pkgs.nushell;
     isNormalUser = true;
     hashedPassword = "$6$ydUf1Ad5JFjVWlDV$tnlE9waEEzaQl/jUw/DkXM7rB.de8b.fr7jIld9KR9qbrxcRuHOF9.OWZ0gRXePiDF04eO0p3CI2Rd5pO6KwN0";
     description = "Calcium";
