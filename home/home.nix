@@ -49,6 +49,7 @@
     bemenu
     mustache-go
     helix
+    nushell
     ];
 
 }
