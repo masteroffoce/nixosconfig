@@ -14,7 +14,6 @@
   fonts.fontconfig.enable = true;
 
   xdg.configFile."hypr/shaders/test1.glsl".source = ./hypr/shaders/test1.glsl;
-  xdg.configFile."nvim".source = ./nvim;
   #xdg.configFile.".config/.tmux.conf".source = ./.config/.tmux.conf;
 
   home.file.".config/kitty/kitty.conf".source = ./.config/kitty/kitty.conf;
@@ -27,7 +26,6 @@
     kitty
     neofetch 
     git
-    vim
     cmatrix
     firefox
     waybar
@@ -35,15 +33,8 @@
     flatpak
     erlang
     python3
-    unzip
-    hyprpaper
-    neovim
-    file
-    ripgrep
     wget
     wofi
-    zafiro-icons
-    nwg-icon-picker
     qutebrowser
     librewolf
     superTuxKart
