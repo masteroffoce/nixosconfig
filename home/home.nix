@@ -57,6 +57,7 @@
     tinty
     bemenu
     mustache-go
+    helix
     ];
 
 }
